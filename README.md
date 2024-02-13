@@ -1,10 +1,15 @@
 # Netflix GPT
     - Create React App
     - Comfigured TailwindCSS
+    - Header
     - Setup react-router-dom
+    - Routing
+    - Login/SignUp Form
+    - form validation
+    - useRef Hook
     
 # Features
-    - Login/SignUp Form
+
     - Redirect to Browse Page
     - Header
     - Main Movie
