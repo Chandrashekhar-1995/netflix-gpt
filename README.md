@@ -9,7 +9,9 @@
     - useRef Hook
     - firebase setup
     - Deploy :- https://netflixgpt-fa108.web.app/
-    - Create Signin Signup user a/c
+    - Create Signin Signup user API
+    - Create Redux Store with user Slics.
+    
     
 # Features
 
