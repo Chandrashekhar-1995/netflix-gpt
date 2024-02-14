@@ -14,6 +14,10 @@
     - Navigate after Login
     - Bug fix user display nam and display picture
     - Bug fix in user not/login redirect to login/browse page and vise-versa
+    - Unsubscribe to the onAuthStateChanged callback
+    - Add hardcoded value to the constants file
+    - Rejister for TMDB API & create an app & get access token
+    - Get data from TMDB now playing movies list API
     
     
 # Features

@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfi
 import {auth} from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import {addUser} from "../utils/userSlice";
+import { AVATAR_URL, POSTER } from "../utils/constants";
 
 const Login = () => {
   const [loginForm, setLoginForm] = useState(true);
@@ -28,8 +29,7 @@ const Login = () => {
              // Signed up 
               const user = userCredential.user;
               updateProfile(user, {
-                displayName: name.current.value, photoURL: "https://avatars.githubusercontent.com/u/117628519?v=4"
-              })
+                displayName: name.current.value, photoURL:AVATAR_URL })
         .then(() => {
           const {uid, email, displayName, photoURL} = auth.currentUser;
               dispatch(addUser({uid:uid, email:email, displayName:displayName, photoURL:photoURL}))
@@ -68,8 +68,7 @@ const Login = () => {
     <div>
       <Header />
       <div className=" absolute">
-        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/29d8d7d7-83cc-4b5f-aa9b-6fd4f68bfaa6/IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_large.jpg"
-          alt="poster"  />
+        <img src={POSTER} alt="poster"  />
       </div>
       <form className=" w-3/12 absolute bg-black p-12 my-36 mx-auto right-0 left-0 text-white bg-opacity-80 rounded-lg" onClick={(e)=>e.preventDefault()}>
       <h1 className=" text-3xl my-5 ">{loginForm ? "Sign In" : "Sign up"}</h1>
