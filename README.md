@@ -12,6 +12,8 @@
     - Create Signin Signup user API
     - Create Redux Store with user Slics.
     - Navigate after Login
+    - Bug fix user display nam and display picture
+    - Bug fix in user not/login redirect to login/browse page and vise-versa
     
     
 # Features
