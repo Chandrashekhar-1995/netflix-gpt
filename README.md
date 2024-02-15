@@ -16,8 +16,11 @@
     - Bug fix in user not/login redirect to login/browse page and vise-versa
     - Unsubscribe to the onAuthStateChanged callback
     - Add hardcoded value to the constants file
-    - Rejister for TMDB API & create an app & get access token
+    - Rajister for TMDB API & create an app & get access token
     - Get data from TMDB now playing movies list API
+    - Create Movies Slice and connect it with Store;
+    - Custom hook for nowPlayingMovies
+    - Fetch movies list from TMDB and update redux store
     
     
 # Features
