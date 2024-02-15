@@ -21,6 +21,7 @@
     - Create Movies Slice and connect it with Store;
     - Custom hook for nowPlayingMovies
     - Fetch movies list from TMDB and update redux store
+    - fetch and filter trailer video
     
     
 # Features
