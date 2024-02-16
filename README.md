@@ -22,6 +22,7 @@
     - Custom hook for nowPlayingMovies
     - Fetch movies list from TMDB and update redux store
     - fetch and filter trailer video
+    - Custom hook for trailer video
     
     
 # Features
