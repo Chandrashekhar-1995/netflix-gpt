@@ -23,6 +23,8 @@
     - Fetch movies list from TMDB and update redux store
     - fetch and filter trailer video
     - Custom hook for trailer video
+    - setup Video background
+    - Embed youtube code for video auto play
     
     
 # Features
