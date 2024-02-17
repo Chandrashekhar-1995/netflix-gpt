@@ -25,6 +25,12 @@
     - Custom hook for trailer video
     - setup Video background
     - Embed youtube code for video auto play
+    - Custom Hook for Top rated movies
+    - Custom Hook for upcoming movies
+    - Custom Hook for Popular rated movies
+    - Create Movies card component
+    - Create Movies List componment
+    - Make Movies cards for browse 
     
     
 # Features
