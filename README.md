@@ -31,6 +31,7 @@
     - Create Movies card component
     - Create Movies List componment
     - Make Movies cards for browse 
+    - Set Toggle Button for open GPT Search page 
     
     
 # Features
