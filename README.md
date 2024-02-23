@@ -32,6 +32,10 @@
     - Create Movies List componment
     - Make Movies cards for browse 
     - Set Toggle Button for open GPT Search page 
+    - GPT Search Page
+    - GPT Search Bar
+    - Multi-language feature in our app
+    - Integrate GPT APIS (get openai key)
     
     
 # Features
