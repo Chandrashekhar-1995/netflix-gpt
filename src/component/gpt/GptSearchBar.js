@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
-import lang from "../utils/languageConstants";
+import lang from "../../utils/languageConstants";
 import { useRef } from "react";
-import openai from "../utils/openai"
-import { API_OPTIONS } from "../utils/constants";
-import {addGptMovieResult} from "../utils/GptSlice";
+import openai from "../../utils/openai";
+import { API_OPTIONS } from "../../utils/constants";
+import { addGptMovieResult } from "../../store/gptSlice";
 
 const GptSearchBar = ()=>{
     const langKey = useSelector(store=> store.config.lang);
@@ -17,14 +17,15 @@ const GptSearchBar = ()=>{
     }
     
     const handleGptSearchClick = async () =>{
-        // console.log(searchText.current.value);   
-        const gptQuery = "Act as a movie recommendation system and suggest some movie for query"+searchText.current.value+"only give me name of five movies, comma seperated like the example result given ahead . Example Result: Gadar, Sholay, Don, Golmaal, Koi Mil Gaya";     
+        console.log(searchText.current.value);   
+        const gptQuery = "Act as a movie recommendation system and suggest some movie for query"+searchText.current.value+"only give me name of five movies, comma seperated like the example result given ahead. Example Result: Gadar, Sholay, Don, Golmaal, Koi Mil Gaya";     
         const gptResult =  await openai.chat.completions.create({
             messages: [{ role: 'user', content: gptQuery }],
             model: 'gpt-3.5-turbo',
           });
           if(!gptResult.choices) 
-          {//Write error handling
+          {
+            // Write error handling
         };
         //   console.log(gptResult.choices);
         //   console.log(gptResult.choices?.[0]?.message?.content);

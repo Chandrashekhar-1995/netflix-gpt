@@ -1,6 +1,6 @@
 import GptSearchBar from "./GptSearchBar";
 import GptMovieSuggestion from "./GptMovieSuggestion";
-import { POSTER } from "../utils/constants";
+import { POSTER } from "../../utils/constants";
 
 const GptSearchPage = ()=>{
     return(

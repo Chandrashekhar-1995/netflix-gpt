@@ -3,11 +3,10 @@ import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import usePopularMovies from "../hooks/usePopularMovies";
 import useUpcomingMovies from "../hooks/useUpcomingMovies";
 import useTopRatedMovies from "../hooks/useTopRatedMovies";
-import MainComponent from "./MainContainer";
-import SeconderyComponent from "./SeconderyComponent";
-import GptSearchPage from "./GptSearchPage";
 import { useSelector } from "react-redux";
-
+import GptSearchPage from "./gpt/GptSearchPage";
+import MainContainer from "./MainContainer"
+import SeconderyContainer from "./SeconderyContainer"
 
 const Browse=()=>{
     useNowPlayingMovies();
@@ -22,8 +21,8 @@ const Browse=()=>{
             {
                 showGptSearch ? <GptSearchPage/> :
                 <>
-                    <MainComponent/>
-                    <SeconderyComponent/>
+                    <MainContainer/>
+                    <SeconderyContainer/>
                 </>
             }
         </div>

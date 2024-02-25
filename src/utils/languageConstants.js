@@ -14,6 +14,10 @@ const lang = {
 };
 
 
-export const SUPPORT_LANGUAGE =[{identifier:"en", name:"English"}, {identifier:"hindi", name:"Hindi"}, {identifier:"spanish", name:"Spanish"}];
+export const SUPPORTED_LANGUAGES = [
+    { identifier: "en", name: "English" },
+    { identifier: "hindi", name: "Hindi" },
+    { identifier: "spanish", name: "Spanish" },
+  ];
 
 export default lang;
