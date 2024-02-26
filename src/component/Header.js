@@ -7,7 +7,7 @@ import { LOGO } from "../utils/constants";
 import { changeLanguage } from "../store/configSlice";
 import { SUPPORTED_LANGUAGES } from "../utils/languageConstants";
 import { addUser, removeUser } from "../store/userSlice";
-import {toggleGptSearchView} from "../store/gptSlice";
+import {toggleGptSearchView, clearGptSearchPage} from "../store/gptSlice";
 
 const Header=()=>{
     const dispatch =useDispatch();
@@ -24,6 +24,8 @@ const Header=()=>{
     const handleGptSearchClick = () =>{
         // console.log("handleGptSearchClick BTN Clicked");
         dispatch(toggleGptSearchView());
+
+        if(showGptSearch)  dispatch(clearGptSearchPage())
     };
 
     const handleSignOut = () => {

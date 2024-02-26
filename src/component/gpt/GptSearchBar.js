@@ -27,12 +27,9 @@ const GptSearchBar = ()=>{
           {
             // Write error handling
         };
-        //   console.log(gptResult.choices);
-        //   console.log(gptResult.choices?.[0]?.message?.content);
         const gptMovies = gptResult.choices?.[0]?.message?.content.split(",");
         const promiseArray = gptMovies.map((movie)=>searchMovieTMDB(movie));
         const tmdbResults = await Promise.all(promiseArray);
-        // console.log(tmdbResults);
         dispatch(addGptMovieResult({moviesName:gptMovies, movieResults:tmdbResults}));
 
     }

@@ -36,7 +36,8 @@
     - GPT Search Bar
     - Multi-language feature in our app
     - Integrate GPT APIS (get openai key)
-    
+    - Gpt Search Movie
+    - Reuse Movie Card    
     
 # Features
 
