@@ -38,6 +38,7 @@
     - Integrate GPT APIS (get openai key)
     - Gpt Search Movie
     - Reuse Movie Card    
+    - Made our Site Responsive
     
 # Features
 
