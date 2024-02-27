@@ -39,6 +39,7 @@
     - Gpt Search Movie
     - Reuse Movie Card    
     - Made our Site Responsive
+    - Memoization to reduce Api Calls
     
 # Features
 
